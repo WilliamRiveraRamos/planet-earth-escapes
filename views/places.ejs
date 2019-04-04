@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <% include ../public/external_stylesheets %>
+
+        <link rel="stylesheet" href="/stylesheets/app.css">
+        
+        <title>Hello, world!</title>
+    </head>
+
+    <body>
+
+    <% include header %>
+    
+    <section id="places">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <article>
+                        <h1>All Scapes</h1>
+                        <p>Click more info to see scape details</p>
+                    </article>
+                </div>
+            </div>
+            <div class="row pull-right">
+                <% places.forEach(function(placeData){ %>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <h4 class="card-title"><%= placeData.name %></h4>
+                                <img src="<%= placeData.image %>" alt="Place Image" class="img-thumbnail">
+                                <h5 class="card-subtitle my-2"><%= placeData.country %></h5>
+                                <p class="card-text"><%= placeData.desc %></p>
+                                <p><a class="card-link" href="/places/<%= placeData._id %>">More info</a></p>
+                            </div>
+                        </div>      
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <% include footer %>

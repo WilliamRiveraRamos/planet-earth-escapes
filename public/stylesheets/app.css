@@ -1,0 +1,252 @@
+/*=====================
+landing page background 
+=======================*/
+
+.landingBG {
+    background: url('../images/landing-page-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*=========================
+Body pages background color
+=========================*/
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 10rem;
+}
+
+/*=====
+Navbar
+=======*/
+.navbar {
+    background-color: rgb(216, 216, 216);
+}
+
+.nav-item i {
+    color: #5a53a3;
+    font-size: 1.9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#topNav .navbar {
+    background-color: transparent;
+}
+
+#topNav .nav-item {
+    font-size: 1rem;
+}
+
+#topNav .fa-user-check {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+#topNav .fa-sign-in-alt {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+#topNav .fa-user-times {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+#topNav a {
+    color: whitesmoke;
+}
+
+#bottomNavBar .navbar {
+    box-shadow: 3px 3px 5px black;
+}
+
+
+
+/*===========
+Forms groups
+=============*/
+.form-group {
+    width: 70%;
+    margin: 5rem auto auto auto;
+    background-color: whitesmoke;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*=========================
+Landing page (landing.ejs)
+===========================*/
+#landing {
+    text-align: center;
+    margin-top: 10rem;
+    background-color: black;
+    opacity: 0.7;
+    padding: 7rem 0rem 8rem 0rem;
+}
+
+#landing .btn {
+    margin-top: 3rem;
+}
+
+#landing h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px black;
+}
+
+#landing p {
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*=======================
+Places page (places.ejs)
+=======================*/
+#places article h1 {
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+#places article p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+#places .card-text {
+    height: 63px;
+    overflow: hidden;
+    color: #24243e;
+}
+
+/*=======================
+More info page (show.ejs)
+========================*/
+#moreInfo h1 {
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+#moreInfo img {
+    display: block;
+    margin: 0 auto;
+}
+
+#moreInfo p {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+#moreInfoComments {
+    border-radius: 10px;
+    background-color: rgb(227, 202, 255);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/*=====================
+Login page (login.ejs) 
+=======================*/
+#login h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+#login input {
+    width: 50%;
+    margin: 0 auto 1.5rem auto;
+}
+
+#login button {
+    display: block;
+    margin: 0 auto;
+}
+
+/*=====================================
+Add new comment page (comments/new.ejs)
+=======================================*/
+#newComment h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+#newComment input {
+    width: 70%;
+    margin: 0 auto 1.5rem auto;
+}
+
+#newComment button {
+    display: block;
+    margin: 0 auto;
+}
+
+/*====================================
+Add new place page (add_new_place.ejs)
+=====================================*/
+#newPlace h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+#newPlace input {
+    width: 80%;
+    margin: 0 auto 1.5rem auto;
+}
+
+#newPlace textarea {
+    width: 80%;
+    margin: 0 auto 1.5rem auto;
+}
+
+#newPlace button {
+    display: block;
+    margin: 0 auto;
+}
+
+/*====================================
+Register or SignUp page (register.ejs)
+=====================================*/
+#register h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+#register input {
+    width: 50%;
+    margin: 0 auto 1.5rem auto;
+}
+
+#register button {
+    display: block;
+    margin: 3rem auto auto auto;
+}

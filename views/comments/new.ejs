@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <% include ../../public/external_stylesheets %>
+
+        <link rel="stylesheet" href="/stylesheets/app.css">
+
+        <title>Hello, world!</title>
+    </head>
+
+    <body> 
+        <% include ../header %>
+
+        <section id="newComment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form action="/places/<%= place._id %>/comments" method="POST">
+                            <div class="form-group">
+                                <h1>Add new comment to <%= place.name %></h1>
+                                <input type="text" name="comment[text]" placeholder="comment" class="form-control form-control-lg">
+                               
+                                <button class="btn btn-lg btn-outline-success">Post Comment</button>
+                                <p class="mt-5 text-muted small">Only registered users can add comments. <a href="/login">Login</a> or <a href="/register">Sign Up</a>.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <% include ../footer %>

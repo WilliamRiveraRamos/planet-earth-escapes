@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <% include ../public/external_stylesheets %>
+
+        <link rel="stylesheet" href="/stylesheets/app.css">
+
+        <title>Hello, world!</title>
+    </head>
+
+    <body>
+    <% include header %>
+    
+    <section id="newPlace">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="/places" method="POST">
+                        <div class="form-group">
+                            <h1>Add New Scape</h1>
+                            <input type="text" name="name" placeholder="Scape Name" class="form-control form-control-lg" required>
+
+                            <input type="text" name="country" placeholder="Country Name" class="form-control form-control-lg" required>
+                    
+                            <input type="text" name="image" placeholder="Image url" class="form-control form-control-lg" required>
+                
+                            <textarea type="text" name="desc" placeholder="Description" class="form-control form-control-lg" rows="3" required></textarea>
+                            <button class="btn btn-lg btn-outline-success mt-5">Add Scape</button>
+                    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <% include footer %>
