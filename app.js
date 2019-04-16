@@ -1,18 +1,21 @@
-const   express =       require('express'),
-        request =       require('request'),
-        bodyParser =    require('body-parser'),
-        mongoose =      require('mongoose'),
-        passport  =     require('passport'),
-        LocalStrategy = require('passport-local'),
-        User =          require('./models/user'),
-        app =           express();
+// Dependencies
+const express         = require('express'),
+      request         = require('request'),
+      bodyParser      = require('body-parser'),
+      mongoose        = require('mongoose'),
+      passport        = require('passport'),
+      LocalStrategy   = require('passport-local'),
+      User            = require('./models/user'),
+      app             = express(),
+      http            = require('http').Server(app);
+      
 
-var http =              require('http').Server(app),
-    indexRoutes =       require ('./routes/index'),
-    placesRoutes =      require('./routes/places'),
-    commentsRoutes =    require('./routes/comments');
+// Require Routes
+var indexRoutes       = require ('./routes/index'),
+    placesRoutes      = require('./routes/places'),
+    commentsRoutes    = require('./routes/comments');
 
-    ////// DB CONNECTION //////
+// MongoDB CONNECTION //
 mongoose.connect('mongodb://localhost:27017/scapesDB', {useNewUrlParser: true});
 
 // body-parser
@@ -24,7 +27,7 @@ app.use(express.static('public'))
 // Set view engine to ejs
 app.set('view engine', 'ejs')
 
-// PASSPORT CONFIG
+// PASSPORT CONFIG //
 app.use(require('express-session')({
     secret: 'Secrets... Secrets...',
     resave: false,
