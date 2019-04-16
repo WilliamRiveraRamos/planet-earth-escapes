@@ -18,11 +18,11 @@ body {
     padding-bottom: 10rem;
 }
 
-/*=====
-Navbar
-=======*/
+/*============
+Bottom Navbar
+============*/
 .navbar {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(19, 19, 19);
 }
 
 .nav-item i {
@@ -32,6 +32,13 @@ Navbar
     margin-right: 1rem;
 }
 
+#bottomNavBar .navbar {
+    box-shadow: 3px 3px 5px black;
+}
+
+/*===============
+ Top Navbar
+================*/
 #topNav .navbar {
     background-color: transparent;
 }
@@ -58,12 +65,6 @@ Navbar
 #topNav a {
     color: whitesmoke;
 }
-
-#bottomNavBar .navbar {
-    box-shadow: 3px 3px 5px black;
-}
-
-
 
 /*===========
 Forms groups
@@ -249,4 +250,34 @@ Register or SignUp page (register.ejs)
 #register button {
     display: block;
     margin: 3rem auto auto auto;
+}
+
+/*============================
+Media query for small devices
+============================*/
+@media (max-width: 567px) {
+    #moreInfo h1 {
+        font-size: 3rem;
+    }
+    #moreInfo p {
+        font-size: 1.3rem;
+    }
+    #newComment h1 {
+        font-size: 2rem;
+    }
+    .form-group {
+        width: 100%;
+    }
+    #newComment input {
+        width: 90%;
+    }
+    #newComment button {
+        margin-top: 3rem;
+    }
+    #register input {
+        width: 90%;
+    }
+    #login input {
+        width: 90%;
+    }
 }
