@@ -1,7 +1,7 @@
 # Planet Earth Scapes
 This is a full web app with username and password authentication and all the files you need (models, routes, views, stylesheets) to start a great app using Node, Express, MongoDB, Passport and related technologies. All you need to do is some settings.
 
-The app simulated a place with beautiful "scapes" to go or scape on the planet earth. Users can sign up, login, add comments, add new places or scapes and view all the scapes.
+The app simulated a place with beautiful "scapes" to go or escape on the planet earth. Users can sign up, login, add comments, add new places or scapes and view all the scapes.
 
 Un-registered users can only view all the places and comments but logged in users can do the same plus add comments and add new places or scapes.
 
