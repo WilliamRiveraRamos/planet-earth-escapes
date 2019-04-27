@@ -5,6 +5,9 @@ Un-registered users can only view all the places and comments but logged in user
 
 A Midleware function called **isLogggedIn** verify if the user is logged in before he/she can add new comment or scapes.
 
+### Screenshot
+![Planet Earth Escapes Home Page](http://velozityweb.com/WRivera/screenshot/all-scapes-page-screenshot.png)
+
 # Use
 1. Clone this repo
 2. Install **all dependencies** on package.json
