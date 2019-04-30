@@ -26,7 +26,7 @@ Bottom Navbar
 }
 
 .nav-item i {
-    color: #5a53a3;
+    color: #817ace;
     font-size: 1.9rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -70,11 +70,11 @@ Bottom Navbar
 Forms groups
 =============*/
 .form-group {
-    width: 70%;
+    width: 50%;
     margin: 5rem auto auto auto;
     background-color: whitesmoke;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-radius: 20px;
     text-align: center;
 }
@@ -144,7 +144,7 @@ More info page (show.ejs)
     margin-top: 5rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: lighter;
 }
 
@@ -167,13 +167,17 @@ More info page (show.ejs)
     padding: 1rem 1rem 1rem 1rem;
 }
 
+#author p {
+    margin-top: 5px;
+}
+
 /*=====================
 Login page (login.ejs) 
 =======================*/
 #login h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: lighter;
 }
 
@@ -236,9 +240,9 @@ Add new place page (add_new_place.ejs)
 Register or SignUp page (register.ejs)
 =====================================*/
 #register h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: lighter;
 }
 
