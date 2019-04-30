@@ -1,4 +1,4 @@
-// Dependencies
+// App Dependencies
 const express         = require('express'),
       request         = require('request'),
       bodyParser      = require('body-parser'),
@@ -7,8 +7,7 @@ const express         = require('express'),
       LocalStrategy   = require('passport-local'),
       User            = require('./models/user'),
       app             = express(),
-      http            = require('http').Server(app);
-      
+      http            = require('http').Server(app);      
 
 // Require Routes
 var indexRoutes       = require ('./routes/index'),
