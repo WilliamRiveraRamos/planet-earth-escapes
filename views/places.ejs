@@ -10,20 +10,18 @@
 
         <link rel="stylesheet" href="/stylesheets/app.css">
         
-        <title>Hello, world!</title>
+        <title><%= pageTitle %></title>
     </head>
-
     <body>
-
     <% include header %>
-    
+
     <section id="places">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <article>
-                        <h1>All Scapes</h1>
-                        <p>Click more info to see scape details</p>
+                        <h1>All Escapes</h1>
+                        <p>Click more info to see escape details</p>
                     </article>
                 </div>
             </div>
@@ -32,7 +30,7 @@
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card mb-5">
                             <div class="card-body">
-                                <h4 class="card-title"><%= placeData.name %></h4>
+                                <h5 class="card-title"><%= placeData.name %></h5>
                                 <img src="<%= placeData.image %>" alt="Place Image" class="img-thumbnail">
                                 <h5 class="card-subtitle my-2"><%= placeData.country %></h5>
                                 <p class="card-text"><%= placeData.desc %></p>
