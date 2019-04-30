@@ -10,7 +10,7 @@ router.get('/places', function(req, res){
         if(err){
             console.log(err);
         } else {
-            res.render('places.ejs', {places: allPlaces});
+            res.render('places.ejs', { places: allPlaces, pageTitle: 'View All Escapes' });
         }
     });
 });
@@ -29,7 +29,7 @@ router.post('/places', isLoggedIn, function(req, res){
     var desc = req.body.desc;
     var newPlace = {name: name, country: country, image: image, desc: desc};
     
-    // Create new place and save to DB
+    // Create new place and save it to DB
     Place.create(newPlace, function(err, newCreatePlace){
         if(err){
             console.log(err)
