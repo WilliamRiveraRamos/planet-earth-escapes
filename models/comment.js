@@ -1,3 +1,4 @@
+// Schema for comments
 var mongoose = require('mongoose');
 
 var commentSchema = mongoose.Schema({
