@@ -31,8 +31,10 @@
                             <div id="moreInfoComments">
                                 <p>
                                     <% place.comments.forEach(function(comment){ %>
-                                        <p><%= comment.text %></p>
-                                        <p>- <b class="text-muted"><%= comment.author.username %></b></p>
+                                        <p>
+                                            <%= comment.text %><br />
+                                            <i>- <%= comment.author.username %></i>
+                                        </p>
                                     <% }); %>
                                 </p>
                             </div>
@@ -42,9 +44,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        
-
-        
-        
+            </div>  
+               
         <% include footer %>
