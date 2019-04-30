@@ -7,17 +7,17 @@
             <% if(!currentUser){ %>
 
             <li class="nav-item top-nav-font-size">
-                <a class="nav-link" href="/register">Sign Up <i class="fas fa-sign-in-alt"></i></a>
+                <a class="nav-link" href="/register">Sign Up<i class="fas fa-sign-in-alt"></i></a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="/login">Login <i class="fas fa-user-check"></i></a>
+                <a class="nav-link" href="/login">Login<i class="fas fa-user-check"></i></a>
             </li>
 
             <% } else { %>
 
             <li class="nav-item">
-                <a class="nav-link text-capitalize" href="#"><b>Logged in as : &nbsp;</b> <%= currentUser.username %></a>
+                <a class="nav-link text-capitalize" href="#"><b>Logged in as : </b> <%= currentUser.username %></a>
             </li>
 
             <li class="nav-item">
