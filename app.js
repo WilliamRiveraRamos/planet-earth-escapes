@@ -43,7 +43,7 @@ app.use(placesRoutes);
 app.use(commentsRoutes);
 
 
-// Display message if page or route don't exist
+// Display Page NOT found! if a route don't exist
 app.get('*', (req, res) => res.send('Page NOT found!'))
 
 // Start Server
